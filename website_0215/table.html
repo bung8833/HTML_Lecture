@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .tb1 {
+            border: 3px solid #660066;
+            width: 400px;
+            border-collapse: collapse;
+            /*text-size-adjust: auto;*/
+        }
+        td, th {
+            border: 2px solid #660066;
+        }
+        thead {
+            /*background-color: #cc6699;*/
+            background-color: #d98cb3;
+            /*color: white;*/
+            text-transform: capitalize;
+        }
+        tbody {
+            /*background-color: #cce6ff;*/
+            text-align: center;
+        }
+            tbody tr:nth-child(2n+1) {
+                background-color: #99ccff;
+            }
+            tbody tr:nth-child(2n) {
+                background-color: #66b3ff;
+            }
+            tbody td:hover {
+                background-color: #1a8cff;
+                color: white;
+            }
+    </style>
+</head>
+
+<body>
+    <table class="tb1">
+        <caption><h2>表格練習</h2></caption>
+        <thead>
+            <tr>
+                <th>Column1</th>
+                <th>Column2</th>
+                <th>Column3</th>
+                <th>Column4</th>
+            </tr>
+            <tr>
+                <th colspan="2">A</th>
+                <th>C</th>
+                <th>D</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">column3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <!--<td>7</td>-->
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
